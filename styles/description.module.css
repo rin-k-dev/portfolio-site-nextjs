@@ -1,0 +1,15 @@
+.lDescription h2 {
+    font-size: 2rem;
+    margin-top: var(--space);
+    text-align: center;
+}
+
+.lDescription p {
+    font-size: var(--small-body);
+    text-align: center;
+}
+
+.pDescription {
+    background-color: var(--white);
+    padding-bottom: 3.75rem;
+}

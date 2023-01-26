@@ -1,0 +1,19 @@
+.uDisplaySpOnly {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .uDisplaySpOnly {
+        display: none;
+    }
+}
+
+.uDisplayPcOnly {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .uDisplayPcOnly {
+        display: block;
+    }
+}
