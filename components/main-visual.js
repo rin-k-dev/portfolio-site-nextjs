@@ -1,13 +1,13 @@
 import Image from "next/image"
 import mainvisualsp from 'images/main-visual-sp.png'
 import mainvisualpc from 'images/main-visual-pc.png'
-import styles from 'styles/utils.module.css'
+import utils from 'styles/utils.module.css'
 
 export default function MainVisual() {
     return (
         <div>
             <Image
-                className={styles.uDisplaySpOnly}
+                className={utils.uDisplaySpOnly}
                 src={mainvisualsp}
                 alt="Rin K. 千葉県在住のWebコーダーです。ポートフォリオをご覧いただきありがとうございます。Web制作のお仕事承ります。"
                 sizes="100vw"
@@ -21,7 +21,7 @@ export default function MainVisual() {
                 }}
             />
             <Image
-                className={styles.uDisplayPcOnly}
+                className={utils.uDisplayPcOnly}
                 src={mainvisualpc}
                 alt="Rin K. 千葉県在住のWebコーダーです。ポートフォリオをご覧いただきありがとうございます。Web制作のお仕事承ります。"
                 sizes="100vw"
@@ -35,6 +35,5 @@ export default function MainVisual() {
                 }}
             />
         </div>
-        
     )
 }

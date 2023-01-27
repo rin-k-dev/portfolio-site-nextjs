@@ -1,0 +1,86 @@
+/* Button */
+.cContactButton {
+    width: 10.125rem;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(88.5deg, #EA42B1 0.69%, #E43232 54.49%, #EB8160 94.59%);
+    padding: 10px 3rem;
+    color: var(--white);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .btn {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .list li a {
+        font-size: 1.125rem;
+    }
+
+    .list li a:hover {
+        cursor: pointer;
+    }
+}
+
+/*  Mobile*/
+@media (max-width: 767px) {
+    .btn {
+        color: var(--black);
+        font-size: 0.875rem;
+        line-height: 1.6;
+        text-align: center;
+        width: 60px;
+        height: 32px;
+        border-radius: 5px;
+        border-color: var(--black);
+        border-width: 1px;
+        background-color: var(--white);
+        position: relative;
+        z-index: 200;
+    }
+
+    .close .btn::before {
+        content: 'menu';
+    }
+
+    .open .btn::before {
+        content: 'close';
+    }
+
+    /* menu(overlay) */
+    .list {
+        position: fixed;
+        inset: -100% 0 100% 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.8);
+        color: var(--black);
+        transition: transform 0.4s;
+    }
+
+    .open .list {
+        transform: translateY(100%);
+    }
+
+    /* menu(position of overlay) */
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        text-align: center;
+        padding-top: 8.125rem;
+    }
+
+    .list a {
+        font-size: 2rem;
+    }
+
+    .cContactButton {
+        font-size: 1.125rem !important;
+    }
+}

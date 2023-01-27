@@ -3,6 +3,7 @@
     --white: #ffffff;
     --gray-01: #adadad;
     --gray-02: #d9d9d9;
+    --gray-03: #f2f2f2;
     --black: #333333;
     --accent: #af52de;
 
@@ -28,6 +29,7 @@ body {
     color: var(--black);
     font-size: var(--body);
     font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--gray-03);
 }
 
 h1 {

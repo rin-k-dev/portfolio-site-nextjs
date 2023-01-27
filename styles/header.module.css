@@ -1,0 +1,21 @@
+.flexContainer {
+    composes: spaceBetween from 'styles/utils.module.css';
+}
+
+.lHeader {
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 100px;
+    background-color: var(--white);
+    padding-top: 1.875rem;
+    position: sticky;
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .lHeader {
+        padding-top: 2.125rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
