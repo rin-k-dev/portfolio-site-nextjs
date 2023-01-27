@@ -1,4 +1,4 @@
-import utils from 'styles/utility.module.css'
+import utils from 'styles/utils.module.css'
 import styles from 'styles/description.module.css'
 
 export default function Description() {

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import mainvisualsp from 'images/main-visual-sp.png'
 import mainvisualpc from 'images/main-visual-pc.png'
-import styles from 'styles/utility.module.css'
+import styles from 'styles/utils.module.css'
 
 export default function MainVisual() {
     return (
