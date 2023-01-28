@@ -16,7 +16,7 @@ export default function Home({ posts }) {
                 <Meta />
                 <MainVisual />
                 <Description />
-                <Service id="service" />
+                <Service />
                 <Works posts={posts} />
             </Container>
         </>

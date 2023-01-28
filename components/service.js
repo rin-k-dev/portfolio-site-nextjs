@@ -3,7 +3,7 @@ import styles from 'styles/service.module.css'
 export default function Service() {
     return (
         <section className={styles.pSectionService}>
-            <h2>Service</h2>
+            <h2 id="service">Service</h2>
             <h3>できること</h3>
             <div className={styles.pSectionServiceItems}>
                 <article>
