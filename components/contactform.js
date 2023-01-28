@@ -15,6 +15,10 @@ export default function ContactForm() {
         <section className={styles.pSectionContact}>
             <h2>Contact</h2>
             <h3>お問い合わせ</h3>
+            <p>
+                Web制作のお仕事のご依頼・その他のご相談などございましたら、お気軽に下記フォームよりお問い合わせください。<br /><br />
+                <sup>*</sup>は必須項目です。
+            </p>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name<sup>*</sup></label>
