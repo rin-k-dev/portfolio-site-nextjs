@@ -1,3 +1,7 @@
+.pSectionWorks {
+    margin-bottom: 60px;
+}
+
 .pSectionWorks h2 {
     margin-top: 1.875rem;
 }
@@ -19,6 +23,43 @@
 .pSectionWorks h2, .pSectionWorks h3 {
     color: var(--gray-01);
     text-align: center;
+}
+
+.pSectioinWorksItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    .pSectioinWorksItems {
+        flex-direction: row;
+        gap: 120px;
+    }
+}
+
+.pSectioinWorksItems .post a {
+    display: block;
+}
+
+.pSectioinWorksItems .post a:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.pSectioinWorksItems .post a figure img {
+    width: 19.6875rem;
+    height: 180px;
+}
+
+@media (min-width: 768px) {
+    .pSectioinWorksItems .post a figure img {
+        width: 31.25rem;
+        height: 300px;
+    }
 }
 
 .cMoreButton {
