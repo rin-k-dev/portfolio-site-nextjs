@@ -3,7 +3,7 @@ import styles from 'styles/contactform.module.css'
 import Link from 'next/link'
 
 export default function ContactForm() {
-    const [state, handleSubmit] = useForm("xwkjvove")
+    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
     if (state.succeeded) {
         return (
             <div className={styles.pContactSuccessed}>
