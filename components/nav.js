@@ -30,16 +30,16 @@ export default function Nav() {
             <button className={styles.btn} onClick={toggleNav}></button>
             <ul className={styles.list}>
                 <li>
-                    <Link href="#service" onClick={closeNav}>Service</Link>
+                    <Link href="/#service" onClick={closeNav}>Service</Link>
                 </li>
                 <li>
                     <Link href="/works" onClick={closeNav}>Works</Link>
                 </li>
                 <li>
-                    <Link href="#about" onClick={closeNav}>About</Link>
+                    <Link href="/#about" onClick={closeNav}>About</Link>
                 </li>
                 <li>
-                    <Link href="#contact" className={styles.cContactButton} onClick={closeNav}>Contact</Link>
+                    <Link href="/#contact" className={styles.cContactButton} onClick={closeNav}>Contact</Link>
                 </li>
             </ul>
         </nav>
