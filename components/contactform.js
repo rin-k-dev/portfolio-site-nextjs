@@ -6,10 +6,10 @@ export default function ContactForm() {
     const [state, handleSubmit] = useForm("xwkjvove")
     if (state.succeeded) {
         return (
-            <>
+            <div className={styles.pContactSuccessed}>
                 <p>お問い合わせありがとうございます。<br />3営業日以内に返信させていただきます。</p>
                 <Link href="/">トップページへ戻る</Link>
-            </>
+            </div>
         )
     }
     return (
