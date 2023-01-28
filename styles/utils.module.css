@@ -9,11 +9,6 @@
     flex-direction: column;
 }
 
-.sideBySideCenter {
-    display: flex;
-    flex-direction: column;
-}
-
 @media (min-width: 768px) {
     .sideBySide {
         flex-direction: row;
@@ -23,13 +18,11 @@
     .sideBySideCenter {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
     }
 }
 
 .sideBySideCenter {
     composes: sideBySide;
-    align-items: center;
     text-align: center;
 }
 
