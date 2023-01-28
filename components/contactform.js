@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from '@formspree/react'
 import styles from 'styles/contactform.module.css'
-
+import Link from 'next/link'
 
 export default function ContactForm() {
     const [state, handleSubmit] = useForm("xwkjvove")
@@ -8,6 +8,7 @@ export default function ContactForm() {
         return (
             <>
                 <p>お問い合わせありがとうございます。<br />3営業日以内に返信させていただきます。</p>
+                <Link href="/">トップページへ戻る</Link>
             </>
         )
     }
