@@ -1,0 +1,44 @@
+import { useForm, ValidationError } from '@formspree/react'
+import styles from 'styles/contactform.module.css'
+
+
+export default function ContactForm() {
+    const [state, handleSubmit] = useForm("xwkjvove")
+    if (state.succeeded) {
+        return (
+            <>
+                <p>お問い合わせありがとうございます。<br />3営業日以内に返信させていただきます。</p>
+            </>
+        )
+    }
+    return (
+        <section className={styles.pSectionContact}>
+            <h2>Contact</h2>
+            <h3>お問い合わせ</h3>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="name">Name<sup>*</sup></label>
+                    <span>
+                        <input type="text" name="name" size="40" autocomplete="name" />
+                        <ValidationError prefix="Name" field="name" errors={state.errors} />
+                    </span>
+                    <label htmlFor="email">E-Mail<sup>*</sup></label>
+                    <span>
+                        <input type="email" name="email" size="40" autocomplete="email"></input>
+                        <ValidationError prefix="Email" field="email" errors={state.errors} />
+                    </span>
+                </div>
+                <div>
+                    <label htmlFor="message">Message<sup>*</sup></label>
+                    <span>
+                        <textarea name="message" cols="41" rows="11"></textarea>
+                        <ValidationError prefix="Message" field="message" errors={state.errors} />
+                    </span>
+                </div>
+                <button type="submit" disabled={state.submitting} className={styles.cSendButton}>
+                    送信
+                </button>
+            </form>
+        </section>
+    ) 
+}

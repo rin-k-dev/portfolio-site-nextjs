@@ -22,6 +22,7 @@
     composes: sideBySideCenter from 'styles/utils.module.css';
     gap: 1.875rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,28 @@
+.pSectionContact {
+    margin-top: var(--space);
+    margin-bottom: var(--space);
+}
+
+.pSectionContact h2, .pSectionContact h3 {
+    color: var(--gray-01);
+    text-align: center;
+}
+
+.pSectionContact h3 {
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
+}
+
+.cSendButton {
+    width: 213px;
+    height: 65px;
+    border-radius: 50px;
+    background-color: var(--accent);
+    text-align: center;
+    padding-top: 0.875rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--white);
+    font-size: 1.5rem;
+    border: none;
+}
