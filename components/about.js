@@ -16,6 +16,8 @@ export default function About() {
                         width: '9.375rem',
                         height: '9.375rem',
                     }}
+                    blur
+                    priority
                 />
             </figure>
             <div className={styles.pSectionAbouProfileDescription}>

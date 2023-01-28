@@ -20,6 +20,7 @@ export default function Works({ posts }) {
                                     sizes="(min-width: 768px) 500px, 84%"
                                     placeholder="blur"
                                     blurDataURL={eyecatch.blurDataURL}
+                                    priority
                                 />
                             </figure>
                         </Link>
