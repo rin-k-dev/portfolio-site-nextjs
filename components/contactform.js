@@ -1,6 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react'
 import styles from 'styles/contactform.module.css'
-import Link from 'next/link'
 
 export default function ContactForm() {
     const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
@@ -8,7 +7,6 @@ export default function ContactForm() {
         return (
             <div className={styles.pContactSuccessed}>
                 <p>お問い合わせありがとうございます。<br />3営業日以内に返信させていただきます。</p>
-                <Link href="/">トップページへ戻る</Link>
             </div>
         )
     }
