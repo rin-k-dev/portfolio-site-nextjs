@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-        <section className={styles.pSectionAbout} id="about">
-            <h2>About</h2>
+        <section className={styles.pSectionAbout}>
+            <h2 id="about">About</h2>
             <h3>私について</h3>
             <figure>
                 <Image

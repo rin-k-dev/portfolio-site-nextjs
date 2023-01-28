@@ -1,7 +1,6 @@
 .pSectionAbout {
     background-image: url('/about-bg-sp.png');
     background-repeat: no-repeat;
-    padding-top: var(--space);
     padding-bottom: 60px;
 }
 
@@ -10,6 +9,10 @@
         background-image: url('/about-bg-pc.png');
         padding-bottom: 120px;
     }
+}
+
+.pSectionAbout h2 {
+    margin-top: 160px;
 }
 
 .pSectionAbout h3 {
