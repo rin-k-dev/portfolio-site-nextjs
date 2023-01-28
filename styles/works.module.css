@@ -39,6 +39,8 @@
     .pSectioinWorksItems {
         flex-direction: row;
         gap: 120px;
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
 
