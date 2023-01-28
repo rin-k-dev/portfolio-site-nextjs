@@ -17,14 +17,14 @@ export default function Home({ posts }) {
                 <MainVisual />
                 <Description />
                 <Service />
-                <Works posts={posts}  />
-            </Container> 
+                <Works posts={posts} />
+            </Container>
         </>
     )
 }
 
 export async function getStaticProps() {
-    const posts = await getAllPosts(2)
+    const posts = await getAllPosts(4)
 
     for (const post of posts) {
         if (!post.hasOwnProperty('eyecatch')) {
