@@ -43,6 +43,7 @@ export default function ContactForm() {
                 <button type="submit" disabled={state.submitting} className={styles.cSendButton}>
                     送信
                 </button>
+                <ValidationError errors={state.errors} />
             </form>
         </section>
     ) 
