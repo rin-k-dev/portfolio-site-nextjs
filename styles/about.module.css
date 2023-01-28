@@ -1,0 +1,56 @@
+.pSectionAbout {
+    background-image: url('/about-bg-sp.png');
+    background-repeat: no-repeat;
+    padding-top: var(--space);
+    padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    .pSectionAbout {
+        background-image: url('/about-bg-pc.png');
+        padding-bottom: 120px;
+    }
+}
+
+.pSectionAbout h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space);
+}
+
+.pSectionAbout h2, .pSectionAbout h3 {
+    color: var(--gray-01);
+    text-align: center;
+}
+
+.pSectionAbout figure {
+    text-align: center;
+    margin-bottom: var(--space);
+}
+
+@media (max-width: 767px) {
+    .pSectionAbout figure img {
+        width: 6.25rem !important;
+        height: 6.25rem !important;
+    }
+}
+
+.pSectionAbouProfileDescription {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.pSectionAbouProfileDescription p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .pSectionAbouProfileDescription {
+        width: 47.8125rem;
+        text-align: center;
+    }
+
+    .pSectionAbouProfileDescription p {
+        text-align: left;
+    }
+}

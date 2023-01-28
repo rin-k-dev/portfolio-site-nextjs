@@ -4,6 +4,7 @@
 
 .pSectionService h3 {
     margin-bottom: 1.875rem;
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {

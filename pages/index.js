@@ -6,6 +6,7 @@ import Description from 'components/description'
 import Service from 'components/service'
 import Works from 'components/works'
 import { getPlaiceholder } from 'plaiceholder'
+import About from 'components/about'
 
 import { eyecatchLocal } from 'lib/constants'
 
@@ -18,6 +19,7 @@ export default function Home({ posts }) {
                 <Description />
                 <Service />
                 <Works posts={posts} />
+                <About />
             </Container>
         </>
     )
