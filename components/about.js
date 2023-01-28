@@ -16,7 +16,7 @@ export default function About() {
                         width: '9.375rem',
                         height: '9.375rem',
                     }}
-                    blur
+                    placeholder="blur"
                     priority
                 />
             </figure>
