@@ -12,7 +12,7 @@ export default function Service() {
                     <ul>
                         <li>最新のHTML/CSSに基づいたコーディング</li>
                         <li>BEM、FLOCSSなどのCSS設計に柔軟に対応可能</li>
-                        <li>SassやNode.jsを用いたコーディングも可能</li>
+                        <li>SassやNext.jsを用いたコーディングも可能</li>
                     </ul>
                 </article>
                 <article>
