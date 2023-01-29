@@ -16,23 +16,23 @@ export default function ContactForm() {
             <h3>お問い合わせ</h3>
             <p>
                 Web制作のお仕事のご依頼・その他のご相談などございましたら、お気軽に下記フォームよりお問い合わせください。<br /><br />
-                <sup>*</sup>は必須項目です。
+                <span>*</span>は必須項目です。
             </p>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name<sup>*</sup></label>
+                    <label htmlFor="name">Name<span>*</span></label>
                     <span>
                         <input type="text" name="name" size="40" autocomplete="name" />
                         <ValidationError prefix="Name" field="name" errors={state.errors} />
                     </span>
-                    <label htmlFor="email">E-Mail<sup>*</sup></label>
+                    <label htmlFor="email">E-Mail<span>*</span></label>
                     <span>
                         <input type="email" name="email" size="40" autocomplete="email"></input>
                         <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </span>
                 </div>
                 <div>
-                    <label htmlFor="message">Message<sup>*</sup></label>
+                    <label htmlFor="message">Message<span>*</span></label>
                     <span>
                         <textarea name="message" cols="41" rows="11"></textarea>
                         <ValidationError prefix="Message" field="message" errors={state.errors} />
