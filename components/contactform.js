@@ -22,12 +22,12 @@ export default function ContactForm() {
                 <div>
                     <label htmlFor="name">Name<span className={styles.pSectionContactRequired}>*</span></label>
                     <span>
-                        <input type="text" name="name" size="40" autocomplete="name" required />
+                        <input type="text" name="name" size="40" autoComplete="name" required />
                         <ValidationError prefix="Name" field="name" errors={state.errors} />
                     </span>
                     <label htmlFor="email">E-Mail<span className={styles.pSectionContactRequired}>*</span></label>
                     <span>
-                        <input type="email" name="email" size="40" autocomplete="email" required></input>
+                        <input type="email" name="email" size="40" autoComplete="email" required></input>
                         <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </span>
                 </div>
