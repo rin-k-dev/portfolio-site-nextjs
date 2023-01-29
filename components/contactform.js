@@ -16,25 +16,25 @@ export default function ContactForm() {
             <h3>お問い合わせ</h3>
             <p>
                 Web制作のお仕事のご依頼・その他のご相談などございましたら、お気軽に下記フォームよりお問い合わせください。<br /><br />
-                <span>*</span>は必須項目です。
+                <span className={styles.pSectionContactRequired}>*</span>は必須項目です。
             </p>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name<span>*</span></label>
+                    <label htmlFor="name">Name<span className={styles.pSectionContactRequired}>*</span></label>
                     <span>
-                        <input type="text" name="name" size="40" autocomplete="name" />
+                        <input type="text" name="name" size="40" autocomplete="name" required />
                         <ValidationError prefix="Name" field="name" errors={state.errors} />
                     </span>
-                    <label htmlFor="email">E-Mail<span>*</span></label>
+                    <label htmlFor="email">E-Mail<span className={styles.pSectionContactRequired}>*</span></label>
                     <span>
-                        <input type="email" name="email" size="40" autocomplete="email"></input>
+                        <input type="email" name="email" size="40" autocomplete="email" required></input>
                         <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </span>
                 </div>
                 <div>
-                    <label htmlFor="message">Message<span>*</span></label>
+                    <label htmlFor="message">Message<span className={styles.pSectionContactRequired}>*</span></label>
                     <span>
-                        <textarea name="message" cols="41" rows="11"></textarea>
+                        <textarea name="message" cols="41" rows="11" required></textarea>
                         <ValidationError prefix="Message" field="message" errors={state.errors} />
                     </span>
                 </div>

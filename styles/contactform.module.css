@@ -13,6 +13,10 @@
     margin-bottom: 1.875rem;
 }
 
+.pSectionContactRequired {
+    color: red;
+}
+
 .cSendButton {
     width: 213px;
     height: 65px;
