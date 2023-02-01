@@ -9,11 +9,13 @@
     font-size: 2rem;
     margin-top: auto;
     margin-bottom: auto;
+    color: var(--black);
 }
 
 .lHeroContainer h2 {
     font-size: 0.875rem;
     text-align: center;
+    color: var(--black);
 }
 
 .lHeroContainer img {
