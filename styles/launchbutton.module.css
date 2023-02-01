@@ -21,3 +21,10 @@
 .cLaunchButton a:hover {
     cursor: pointer;
 }
+
+@media (min-width:768px) {
+    .cLaunchButton {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
