@@ -1,15 +1,13 @@
 .lHeroContainer {
-    position: relative;
     z-index: 10;
     max-width: 1440px;
-    margin: 0 auto;
+    position: relative;
 }
 
 .lHeroContainer h1 {
     font-size: 2rem;
-    margin-top: auto;
-    margin-bottom: auto;
     color: var(--black);
+    text-align: center;
 }
 
 .lHeroContainer h2 {
@@ -19,7 +17,6 @@
 }
 
 .lHeroContainer img {
-    position: absolute;
     height: 180px !important;
     object-fit: cover;
     opacity: .5;
@@ -27,11 +24,11 @@
 }
 
 .lHeroContainer div {
+    z-index: 30;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 100%);
-    z-index: 30;
+    transform: translate(-50%, -50%);
 }
 
 .uDisplaySpOnly {

@@ -6,10 +6,6 @@ import worksbgpc from 'images/works-bg-pc.png'
 export default function Hero({ title, subtitle }) {
     return (
         <div className={styles.lHeroContainer}>
-            <div>
-                <h1>{title}</h1>
-                <h2>{subtitle}</h2>
-            </div>
             <Image className={styles.uDisplaySpOnly}
                 src={worksbgsp}
                 alt=""
@@ -34,6 +30,10 @@ export default function Hero({ title, subtitle }) {
                     height: 'auto',
                 }}
             />
+            <div>
+                <h1>{title}</h1>
+                <h2>{subtitle}</h2>
+            </div>
         </div>
     )
 }
