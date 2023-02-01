@@ -72,7 +72,8 @@
     border-radius: 50px;
     background-color: var(--accent);
     text-align: center;
-    padding-top: 0.875rem;
+    padding: 10px;
+    line-height: 1.7;
     margin-right: auto;
     margin-left: auto;
 }

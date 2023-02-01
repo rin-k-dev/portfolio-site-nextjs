@@ -43,7 +43,7 @@
     margin-bottom: 10px;
 }
 
-.cSendButton {
+.cSendButton, .cBackButton {
     width: 213px;
     height: 65px;
     border-radius: 50px;
@@ -57,11 +57,24 @@
     border: none;
     display: block;
     margin: var(--space) auto 0 auto;
+    line-height: 1.7;
+}
+
+.cBackButton {
+    margin-bottom: 30px;
 }
 
 .flexContainer {
     display: flex;
     flex-direction: column;
+}
+
+.pContactSuccessed {
+    text-align: center;
+}
+
+.pContactSuccessed p {
+    color: red;
 }
 
 @media (min-width: 768px) {
@@ -82,5 +95,9 @@
 
     .pSectionCantactContainer form input[type=email], .pSectionCantactContainer form input[type=text] {
         width: 100%;
+    }
+
+    .cBackButton {
+        margin-bottom: 60px;
     }
 }

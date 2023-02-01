@@ -1,4 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react'
+import Link from 'next/link'
 import styles from 'styles/contactform.module.css'
 
 export default function ContactForm() {
@@ -7,6 +8,7 @@ export default function ContactForm() {
         return (
             <div className={styles.pContactSuccessed}>
                 <p>お問い合わせありがとうございます。<br />3営業日以内に返信させていただきます。</p>
+                <Link href="https://webcreatorrin.com" className={styles.cBackButton}>トップへ戻る</Link>
             </div>
         )
     }
