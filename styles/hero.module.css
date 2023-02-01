@@ -1,0 +1,54 @@
+.lHeroContainer {
+    position: relative;
+    z-index: 10;
+}
+
+.lHeroContainer h1 {
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.lHeroContainer h2 {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.lHeroContainer img {
+    position: absolute;
+    height: 180px !important;
+    object-fit: cover;
+    opacity: .5;
+    aspect-ratio: 16 / 9;
+}
+
+.lHeroContainer div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: 30;
+}
+
+.uDisplaySpOnly {
+    composes: uDisplaySpOnly from 'styles/utils.module.css';
+}
+
+.uDisplayPcOnly {
+    composes: uDisplayPcOnly from 'styles/utils.module.css';
+}
+
+
+@media (min-width:768px) {
+    .lHeroContainer h1 {
+        font-size: 4rem;
+    }
+
+    .lHeroContainer h2 {
+        font-size: 1.5rem;
+    }
+
+    .lHeroContainer img {
+        height: 350px !important;
+    }
+}
