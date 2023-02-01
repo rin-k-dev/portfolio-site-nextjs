@@ -27,9 +27,8 @@ export default function Hero({ title, subtitle }) {
                 alt=""
                 width={1440}
                 height={350}
-                sizes="100vw"
+                sizes="100%"
                 priority
-                blur
                 style={{
                     width: '100%',
                     height: 'auto',
