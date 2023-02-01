@@ -21,7 +21,7 @@ export default function Schedule({
                 subtitle="制作実績"
             />
             <article>
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <Link href={workurl}>サイトを見る</Link>
             </article>
         </Container>
