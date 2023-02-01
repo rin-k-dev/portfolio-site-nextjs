@@ -15,7 +15,7 @@ export default function ContactForm() {
     return (
         <section className={styles.pSectionContact}>
             <div className={styles.pSectionCantactContainer}>
-                <h2>Contact</h2>
+                <h2 id="contact">Contact</h2>
                 <h3>お問い合わせ</h3>
                 <p>
                     Web制作のお仕事のご依頼・その他のご相談などございましたら、お気軽に下記フォームよりお問い合わせください。<br /><br />
