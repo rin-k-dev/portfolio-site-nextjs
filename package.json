@@ -11,6 +11,7 @@
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "@next/font": "13.1.5",
+    "date-fns": "^2.29.3",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
     "html-text": "^1.0.1",
