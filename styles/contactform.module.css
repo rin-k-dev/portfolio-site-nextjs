@@ -77,7 +77,7 @@
     .flexContainer {
         flex-direction: row;
         justify-content: start;
-        gap: 2rem;
+        gap: 3%;
     }
 
     .pSectionCantactContainer form input[type=email], .pSectionCantactContainer form input[type=text] {
