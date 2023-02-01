@@ -75,10 +75,9 @@
     }
 
     .flexContainer {
-        width: 100%;
         flex-direction: row;
-        gap: 2rem;
         justify-content: start;
+        gap: 2rem;
     }
 
     .pSectionCantactContainer form input[type=email], .pSectionCantactContainer form input[type=text] {

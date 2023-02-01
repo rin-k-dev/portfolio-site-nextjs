@@ -1,0 +1,10 @@
+.pFooter {
+    background: var(--white);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.pFooter small {
+    font-size: 0.875rem;
+}
