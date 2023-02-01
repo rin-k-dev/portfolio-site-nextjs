@@ -2,6 +2,7 @@ import { getPostBySlug } from "lib/api"
 import ContactForm from "components/contactform"
 import Container from "components/container"
 import Hero from 'components/hero'
+import LanchButton from "components/launchbutton"
 import Link from 'next/link'
 
 export default function Schedule({
@@ -22,7 +23,7 @@ export default function Schedule({
             />
             <article>
                 <h2>{title}</h2>
-                <Link href={workurl}>サイトを見る</Link>
+                <LanchButton workurl={workurl}></LanchButton>
             </article>
         </Container>
     )

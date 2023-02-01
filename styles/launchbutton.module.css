@@ -1,0 +1,23 @@
+.cLaunchButton {
+    display: block;
+    width: 213px;
+    height: 65px;
+    border-radius: 50px;
+    background-color: var(--accent);
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cLaunchButton a {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.cLaunchButton a:hover {
+    cursor: pointer;
+}
