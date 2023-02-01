@@ -37,6 +37,8 @@
         text-align: center;
         width: 60px;
         height: 32px;
+        padding: 5px;
+        line-height: 1.4;
         border-radius: 5px;
         border-color: var(--black);
         border-width: 1px;
