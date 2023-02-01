@@ -17,7 +17,6 @@ export default function Hero({ title, subtitle }) {
                 height={350}
                 sizes="100vw"
                 priority
-                blur
                 style={{
                     width: '100%',
                     height: 'auto',
