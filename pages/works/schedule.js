@@ -11,6 +11,7 @@ export default function Schedule({
         categories,
         pcthumbnail,
         spthumbnail,
+        workurl,
 }) {
     return (
         <Container large>
@@ -20,8 +21,8 @@ export default function Schedule({
             />
             <article style={{position: 'static'}}>
                 <h1>{title}</h1>
+                <div>{workurl}</div>
             </article>
-            
         </Container>
     )
 }
@@ -40,6 +41,7 @@ export async function getStaticProps() {
             categories: post.categories,
             pcthumbnail: post.pcthumbnail,
             spthumbnail: post.spthumbnail,
+            workurl: post.workurl,
         }
     }
 }
