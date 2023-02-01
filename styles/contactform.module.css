@@ -64,7 +64,7 @@
     line-height: 1.7;
 }
 
-.cBackButton {
+.cSendButton, .cBackButton {
     margin-bottom: 30px;
 }
 
@@ -103,5 +103,9 @@
 
     .cBackButton {
         margin-bottom: 60px;
+    }
+
+    .cSendButton a:hover, .cBackButton a:hover {
+        cursor: pointer;
     }
 }
