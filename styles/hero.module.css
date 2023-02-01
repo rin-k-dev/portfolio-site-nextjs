@@ -23,7 +23,7 @@
     aspect-ratio: 16 / 9;
 }
 
-.lHeroContainer div {
+.lHeroContainer .lTitle {
     z-index: 30;
     position: absolute;
     top: 50%;

@@ -30,7 +30,7 @@ export default function Hero({ title, subtitle }) {
                     height: 'auto',
                 }}
             />
-            <div>
+            <div className={styles.lTitle}>
                 <h1>{title}</h1>
                 <h2>{subtitle}</h2>
             </div>
