@@ -20,7 +20,7 @@ export default function Schedule({
                 title="Works"
                 subtitle="制作実績"
             />
-            <article style={{position: 'static'}}>
+            <article>
                 <h1>{title}</h1>
                 <Link href={workurl}>サイトを見る</Link>
             </article>
