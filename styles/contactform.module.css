@@ -81,6 +81,10 @@
     color: red;
 }
 
+.cSendButton a:hover, .cBackButton a:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     .pSectionCantactContainer {
         max-width: 813px;
@@ -103,9 +107,5 @@
 
     .cBackButton {
         margin-bottom: 60px;
-    }
-
-    .cSendButton a:hover, .cBackButton a:hover {
-        cursor: pointer;
     }
 }
