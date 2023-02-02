@@ -35,6 +35,12 @@
     margin-bottom: 60px;
 }
 
+.pSectioinWorksItems h2 {
+    font-size: 1.5rem;
+    color: var(--gray-01);
+    margin-top: 10px;
+}
+
 @media (min-width: 768px) {
     .pSectioinWorksItems {
         flex-direction: row;

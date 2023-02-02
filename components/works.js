@@ -7,7 +7,7 @@ export default function Works({ posts }) {
         <section className={styles.pSectionWorks}>
             <h2>Works</h2>
             <h3>制作実績</h3>
-            <div className={styles.pSectioinWorksItems}>
+            <article className={styles.pSectioinWorksItems}>
                 {posts.map(({ title, slug, eyecatch }) => (
                     <div className={`${styles.post}`} key={slug}>
                         <Link href={`/works/${slug}`}>
@@ -23,10 +23,11 @@ export default function Works({ posts }) {
                                     priority
                                 />
                             </figure>
+                            <h2>{title}</h2>
                         </Link>
                     </div>
                 ))}
-            </div>
+            </article>
             <div className={styles.cMoreButton}>
                 <Link href="/works">
                     もっと見る
