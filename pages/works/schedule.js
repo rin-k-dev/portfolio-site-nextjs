@@ -4,6 +4,7 @@ import Container from 'components/container'
 import Hero from 'components/hero'
 import LanchButton from 'components/launchbutton'
 import PostHeader from 'components/post-header'
+import PostImages from 'components/post-images'
 import Link from 'next/link'
 
 export default function Schedule({
@@ -24,6 +25,7 @@ export default function Schedule({
             />
             <article>
                 <PostHeader title={title} subtitle="概要" publish={publish} />
+                <PostImages pcthumbnail={pcthumbnail} spthumbnail={spthumbnail} />
                 <LanchButton workurl={workurl}></LanchButton>
             </article>
         </Container>

@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.sideBySide {
+.center {
     display: flex;
     flex-direction: column;
 }
@@ -21,7 +21,7 @@
     }
 }
 
-.sideBySideCenter {
+.center {
     composes: sideBySide;
     text-align: center;
 }

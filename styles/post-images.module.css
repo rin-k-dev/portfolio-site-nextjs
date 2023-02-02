@@ -1,0 +1,35 @@
+.pcimage {
+    width: 92%;
+    height: auto;
+}
+
+.spimage {
+    width: 40.27%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .pcimage {
+        width: 61.81%;
+    }
+
+    .spimage {
+        width: 10.5%;
+    }
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .flexContainer {
+        flex-direction: row;
+        align-items: end;
+        gap: 120px;
+    }
+}
