@@ -9,7 +9,7 @@ export default function Works({ posts }) {
             <h3>制作実績</h3>
             <div className={styles.pSectioinWorksItems}>
                 {posts.map(({ title, slug, eyecatch }) => (
-                    <article className={`${styles.post}`} key={slug}>
+                    <div className={`${styles.post}`} key={slug}>
                         <Link href={`/works/${slug}`}>
                             <figure>
                                 <Image
@@ -24,7 +24,7 @@ export default function Works({ posts }) {
                                 />
                             </figure>
                         </Link>
-                    </article>
+                    </div>
                 ))}
             </div>
             <div className={styles.cMoreButton}>
