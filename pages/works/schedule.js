@@ -5,7 +5,8 @@ import Hero from 'components/hero'
 import LanchButton from 'components/launchbutton'
 import PostHeader from 'components/post-header'
 import PostImages from 'components/post-images'
-import Link from 'next/link'
+import PostBody from 'components/post-body'
+import ConvertBody from 'components/convert-body'
 
 export default function Schedule({
         title,
@@ -25,6 +26,9 @@ export default function Schedule({
             />
             <article>
                 <PostHeader title={title} subtitle="概要" publish={publish} />
+                <PostBody>
+                    <ConvertBody contentHTML={content} />
+                </PostBody>
                 <PostImages pcthumbnail={pcthumbnail} spthumbnail={spthumbnail} />
                 <LanchButton workurl={workurl}></LanchButton>
             </article>
