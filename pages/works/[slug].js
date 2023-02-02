@@ -11,7 +11,7 @@ import ConvertBody from 'components/convert-body'
 import { getPlaiceholder } from 'plaiceholder'
 
 // Eyecatch image for local
-import { eyecatchLocal } from 'lib/constants'
+import { eyecatchLocal, pcthumbnailLocal, spthumbnailLocal } from 'lib/constants'
 
 export default function Schedule({
         title,
@@ -52,7 +52,7 @@ export default function Schedule({
 export async function getStaticPaths() {
     const allSlugs = await getAllSlugs()
     return {
-        paths: ['/works/sugutabe',],
+        paths: allSlugs.map(({ slug }) => `/works/${slug}`),
         fallback: false,
     }
 }
@@ -68,6 +68,9 @@ export async function getStaticProps(context) {
 
     const { base64 } = await getPlaiceholder(eyecatch.url)
     eyecatch.blurDataURL = base64
+
+    const pcthumbnail = post.pcthumbnail ?? pcthumbnailLocal
+    const spthumbnail = post.spthumbnail ?? spthumbnailLocal
 
     return {
         props: {
