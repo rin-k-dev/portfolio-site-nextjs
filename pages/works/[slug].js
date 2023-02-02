@@ -56,7 +56,7 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
     const slug = 'sugutabe'
     
     const post = await getPostBySlug(slug)
