@@ -14,7 +14,7 @@ export default function Posts({ posts }) {
                                 alt=""
                                 width={eyecatch.width}
                                 height={eyecatch.height}
-                                sizes="(min-width: 768px) 500px, 92%"
+                                sizes="(min-width: 768px) 500px, 92vw"
                                 placeholder="blur"
                                 blurDataURL={eyecatch.blurDataURL}
                             />
