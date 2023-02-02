@@ -27,14 +27,14 @@ export default function ContactForm() {
                         <div>
                             <label htmlFor="name">Name<span className={styles.pSectionContactRequired}>*</span></label>
                             <span>
-                                <input type="text" name="name" size="40" autoComplete="name" required />
+                                <input type="text" name="name" size="40" autoComplete="name" required id="name" />
                                 <ValidationError prefix="Name" field="name" errors={state.errors} />
                             </span>
                         </div>
                         <div>
                             <label htmlFor="email">E-Mail<span className={styles.pSectionContactRequired}>*</span></label>
                             <span>
-                                <input type="email" name="email" size="40" autoComplete="email" required></input>
+                                <input type="email" name="email" size="40" autoComplete="email" required id="email" />
                                 <ValidationError prefix="Email" field="email" errors={state.errors} />
                             </span>
                         </div>
@@ -42,7 +42,7 @@ export default function ContactForm() {
                     <div>
                         <label htmlFor="message">Message<span className={styles.pSectionContactRequired}>*</span></label>
                         <span>
-                            <textarea name="message" cols="41" rows="11" required></textarea>
+                            <textarea name="message" cols="41" rows="11" required id="message"></textarea>
                             <ValidationError prefix="Message" field="message" errors={state.errors} />
                         </span>
                     </div>
