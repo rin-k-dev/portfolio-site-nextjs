@@ -2,12 +2,13 @@ import { getAllPosts } from 'lib/api'
 import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
+import Posts from 'components/posts'
 import { getPlaiceholder } from 'plaiceholder'
 
 //Eyecatch for local
 import { eyecatchLocal } from 'lib/constants'
 
-export default function Works() {
+export default function Works({ posts }) {
     return (
         <Container large>
             <Meta pageTitle="作品" pageDesc="作品一覧"/>
@@ -15,6 +16,7 @@ export default function Works() {
                 title="Works"
                 subtitle="制作実績"
             />
+            <Posts posts={posts} />
         </Container>
         
     )

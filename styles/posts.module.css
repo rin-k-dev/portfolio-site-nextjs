@@ -1,0 +1,15 @@
+.worksContainer {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+.worksContainer article figure img {
+    width: 92%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .worksContainer article figure img {
+        width: 500px;
+    }
+}
