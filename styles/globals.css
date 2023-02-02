@@ -9,9 +9,9 @@
 
     /* typography(font-size) */
     --body: 1rem;
+    /* 16px */
     --small-body: 0.875rem;
     /* 14px */
-    /* 16px */
     --heading1: calc(1rem * 24 / 16);
     /* 24px */
     --heading2: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
@@ -19,6 +19,7 @@
     --heading3: clamp(1.125rem, 0.7672rem + 1.5267vw, 1.5rem);
     /* 18-24px */
     --small-heading2: 1rem;
+    --small-heading3: var(--small-body);
     /* space */
     --space: clamp(1.875rem, 0.0859rem + 7.6336vw, 3.75rem);
     /* 30-60px */

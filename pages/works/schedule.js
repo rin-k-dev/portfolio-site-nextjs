@@ -1,8 +1,9 @@
 import { getPostBySlug } from "lib/api"
-import ContactForm from "components/contactform"
-import Container from "components/container"
+import ContactForm from 'components/contactform'
+import Container from 'components/container'
 import Hero from 'components/hero'
-import LanchButton from "components/launchbutton"
+import LanchButton from 'components/launchbutton'
+import PostHeader from 'components/post-header'
 import Link from 'next/link'
 
 export default function Schedule({
@@ -22,7 +23,7 @@ export default function Schedule({
                 subtitle="制作実績"
             />
             <article>
-                <h2>{title}</h2>
+                <PostHeader title={title} subtitle="概要" publish={publish} />
                 <LanchButton workurl={workurl}></LanchButton>
             </article>
         </Container>
