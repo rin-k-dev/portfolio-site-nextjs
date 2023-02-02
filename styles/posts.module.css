@@ -5,6 +5,12 @@
     gap: 60px;
 }
 
+.worksContainer h2 {
+    font-size: 1.5rem;
+    color: var(--gray-01);
+    margin-top: 10px;
+}
+
 .worksContainer article figure img {
     width: 92%;
     height: auto;
