@@ -51,13 +51,13 @@ export default function Schedule({
 
 export async function getStaticPaths() {
     return {
-        paths: ['/works/schedule',],
+        paths: ['/works/sugutabe',],
         fallback: false,
     }
 }
 
 export async function getStaticProps(context) {
-    const slug = 'sugutabe'
+    const slug = context.params.slug
     
     const post = await getPostBySlug(slug)
 
