@@ -1,4 +1,4 @@
-import { getPostBySlug } from 'lib/api'
+import { getPostBySlug, getAllSlugs } from 'lib/api'
 import { extractText } from 'lib/extract-text'
 import Meta from 'components/meta'
 import Container from 'components/container'
@@ -50,6 +50,7 @@ export default function Schedule({
 }
 
 export async function getStaticPaths() {
+    const allSlugs = await getAllSlugs()
     return {
         paths: ['/works/sugutabe',],
         fallback: false,
