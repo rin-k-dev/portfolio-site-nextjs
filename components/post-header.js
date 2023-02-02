@@ -7,7 +7,7 @@ export default function PostHeader({ title, subtitle, publish = '' }) {
     return (
         <div className={styles.stack}>
             <h2 className={styles.title}>{title}</h2>
-            <p className={styles.subtitle}>{subtitle}</p>
+            <h3 className={styles.subtitle}>{subtitle}</h3>
             {publish && (
                 <div className={styles.publish}>
                     <FontAwesomeIcon icon={faClock} size="lg" color="var(--gray-01)" />

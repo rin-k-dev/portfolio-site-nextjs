@@ -1,0 +1,27 @@
+.stack {
+    text-align: center;
+    width: 92%;
+    margin: 0 auto 30px;
+}
+
+.stack p {
+    text-align: left;
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.stack p strong {
+    font-weight: 700;
+}
+
+.stack p a:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+@media (min-width: 768px) {
+    .stack {
+        width: 56.39%;
+        margin-bottom: 60px;
+    }
+}
