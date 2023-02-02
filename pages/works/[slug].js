@@ -70,6 +70,7 @@ export async function getStaticProps(context) {
     eyecatch.blurDataURL = base64
 
     const pcthumbnail = post.pcthumbnail ?? pcthumbnailLocal
+
     const spthumbnail = post.spthumbnail ?? spthumbnailLocal
 
     return {
@@ -77,11 +78,11 @@ export async function getStaticProps(context) {
             title: post.title,
             publish: post.publishDate,
             content: post.content,
-            eyecatch: post.eyecatch,
+            eyecatch: eyecatch,
             categories: post.categories,
             description: description,
-            pcthumbnail: post.pcthumbnail,
-            spthumbnail: post.spthumbnail,
+            pcthumbnail: pcthumbnail,
+            spthumbnail: spthumbnail,
             workurl: post.workurl,
         }
     }
