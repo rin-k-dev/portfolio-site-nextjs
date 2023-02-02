@@ -1,7 +1,8 @@
 .worksContainer {
     margin-top: 120px;
     margin-bottom: 60px;
-    text-align: center;
+    composes: center from 'styles/utils.module.css';
+    gap: 60px;
 }
 
 .worksContainer article figure img {
@@ -12,5 +13,6 @@
 @media (min-width: 768px) {
     .worksContainer article figure img {
         width: 500px;
+        gap: 120px;
     }
 }
