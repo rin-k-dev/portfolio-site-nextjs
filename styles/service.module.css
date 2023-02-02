@@ -19,7 +19,7 @@
 }
 
 .pSectionServiceItems {
-    composes: sideBySideCenter from 'styles/utils.module.css';
+    composes: center from 'styles/utils.module.css';
     gap: 1.875rem;
     flex-wrap: wrap;
     align-items: center;
