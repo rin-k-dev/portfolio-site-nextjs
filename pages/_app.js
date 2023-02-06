@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
             router.events.off('routeChangeComplete', handleRouteChange)
         }
     }, [router.events])
-    
+
     return (
         <>
             <Script
@@ -33,12 +33,23 @@ export default function App({ Component, pageProps }) {
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
             
-            gtag('config', '${gtag.GA_MEASUREMENT_ID}');
-          `,
+                    gtag('config', '${gtag.GA_MEASUREMENT_ID}');
+                    `,
+                }}
+            />
+            <noscript
+                dangerouslySetInnerHTML={{
+                    __html: `
+                    <iframe
+                        src="https://www.googletagmanager.com/ns.html?id=${gtag.GA_MEASUREMENT_ID}"
+                        height="0"
+                        width="0"
+                        style="display:none;visibility:hidden"
+                    />`,
                 }}
             />
             <Layout>
