@@ -34,7 +34,8 @@ export default function Meta({
 
     return (
         <Head>
-            <meta name="robots" content="noindex" />
+            {// <meta name="robots" content="noindex" /> 
+            }
             <title>{title}</title>
             <meta property="og:title" content={title} />
 
