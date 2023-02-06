@@ -3,6 +3,7 @@ import { extractText } from 'lib/extract-text'
 import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
+import BreadCrumbs from 'components/breadcrumbs'
 import LanchButton from 'components/launchbutton'
 import PostHeader from 'components/post-header'
 import PostImages from 'components/post-images'
@@ -36,6 +37,21 @@ export default function Schedule({
             <Hero
                 title="Works"
                 subtitle="制作実績"
+            />
+            <BreadCrumbs
+                lists={[
+                    {
+                        string: "ホーム",
+                        path: "/",
+                    },
+                    {
+                        string: "制作実績",
+                        path: "/works",
+                    },
+                    {
+                        string: title,
+                    }
+                ]}
             />
             <article>
                 <PostHeader title={title} subtitle="概要" publish={publish} />

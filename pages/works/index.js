@@ -2,6 +2,7 @@ import { getAllPosts } from 'lib/api'
 import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
+import BreadCrumbs from 'components/breadcrumbs'
 import Posts from 'components/posts'
 import { getPlaiceholder } from 'plaiceholder'
 
@@ -15,6 +16,18 @@ export default function Works({ posts }) {
             <Hero
                 title="Works"
                 subtitle="制作実績"
+            />
+            <BreadCrumbs
+                lists={[
+                    {
+                        string: "ホーム",
+                        path: "/",
+                    },
+                    {
+                        string: "制作実績",
+                        path: "/works",
+                    },
+                ]}
             />
             <Posts posts={posts} />
         </Container>
