@@ -9,6 +9,8 @@ const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
 // 汎用OGP画像
 import siteImg from 'images/ogp.jpg'
 
+import GSC_CONTENT from 'lib/google-search-console'
+
 export default function Meta({
     pageTitle,
     pageDesc,
@@ -56,6 +58,7 @@ export default function Meta({
             <meta property="og:image:width" content={imgW} />
             <meta property="og:image:height" content={imgH} />
             <meta name="twitter:card" content="summary_large_image" />
+            <meta name="google-site-verification" content={ GSC_CONTENT } />
         </Head>
     )
 }
