@@ -14,6 +14,10 @@
     font-weight: 700;
 }
 
+.stack p a {
+    word-break: break-word;
+}
+
 .stack p a:hover {
     cursor: pointer;
     opacity: .8;
