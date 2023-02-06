@@ -58,7 +58,7 @@ export default function Meta({
             <meta property="og:image:width" content={imgW} />
             <meta property="og:image:height" content={imgH} />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="google-site-verification" content="${gsc.GSC_CONTENT}" />
+            <meta name="google-site-verification" content={gsc.GSC_CONTENT} />
         </Head>
     )
 }
