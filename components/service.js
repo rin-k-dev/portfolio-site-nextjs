@@ -31,9 +31,9 @@ export default function Service() {
                     <h4>WordPressサイトの構築</h4>
                     <p>WordPressを用いたWebサイト構築が可能です。</p>
                     <ul>
-                        <li>オリジナルテーマの作成</li>
-                        <li>プラグインの設定やカスタマイズ</li>
-                        <li>JavaScriptライブラリのサイトへの導入</li>
+                        <li>オリジナルテーマの作成。</li>
+                        <li>プラグインの設定やカスタマイズ。</li>
+                        <li>JavaScriptライブラリのサイトへの導入。</li>
                     </ul>
                 </article>
             </div>
