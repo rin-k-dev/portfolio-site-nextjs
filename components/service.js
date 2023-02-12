@@ -12,7 +12,7 @@ export default function Service() {
                     <ul>
                         <li>ワイヤーフレームの作成。</li>
                         <li>ワイヤーフレームを基にした、デザインの作成。</li>
-                        <li>使用可能OS：Windows、macOSともに使用可能。
+                        <li>使用可能OS：Windows、macOS。
                         </li>
                         <li>使用可能ソフト：<br />Adobe XD、Figma、Photoshop、Illustrator。</li>
                     </ul>
