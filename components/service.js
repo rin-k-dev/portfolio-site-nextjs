@@ -7,7 +7,7 @@ export default function Service() {
             <h3>できること</h3>
             <div className={styles.pSectionServiceItems}>
                 <article>
-                    <h4>新規Webデザインの作成</h4>
+                    <h4>Webデザイン</h4>
                     <p>ワイヤーフレームおよびデザインの作成。</p>
                     <ul>
                         <li>ワイヤーフレームの作成。</li>
@@ -21,9 +21,10 @@ export default function Service() {
                     <h4>HTML/CSSコーディング</h4>
                     <p>デザインカンプをもとにHTML/CSSでコーディングを行います。</p>
                     <ul>
-                        <li>最新のHTML/CSSに基づいたコーディング</li>
-                        <li>BEM、FLOCSSなどのCSS設計に柔軟に対応可能</li>
-                        <li>SassやNext.jsを用いたコーディングも可能</li>
+                        <li>最新のHTML/CSSに基づいたコーディング。</li>
+                        <li>BEM、FLOCSSなどのCSS設計に柔軟に対応可能。</li>
+                        <li>jQuery、JavaScriptも使用可能。</li>
+                        <li>SassやNext.jsを用いたコーディングも可能。</li>
                     </ul>
                 </article>
                 <article>
