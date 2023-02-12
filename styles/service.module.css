@@ -19,16 +19,12 @@
 }
 
 .pSectionServiceItems {
-    composes: center from 'styles/utils.module.css';
-    gap: 1.875rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
     align-items: center;
-}
+    justify-items: center;
+    grid-gap: 1rem;
 
-@media (min-width: 768px) {
-    .pSectionServiceItems {
-        gap: 120px;
-    }
 }
 
 .pSectionServiceItems article {
@@ -50,7 +46,8 @@
     .pSectionServiceItems article {
         width: 500px;
     }
-     .pSectionServiceItems article ul {
+
+    .pSectionServiceItems article ul {
         padding-left: 1.25rem;
     }
 }
