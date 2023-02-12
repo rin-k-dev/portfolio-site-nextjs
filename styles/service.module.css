@@ -21,7 +21,6 @@
 .pSectionServiceItems {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
-    align-items: center;
     justify-items: center;
     grid-gap: 30px;
 
