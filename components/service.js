@@ -11,7 +11,9 @@ export default function Service() {
                     <p>ワイヤーフレームおよびデザインの作成。</p>
                     <ul>
                         <li>ワイヤーフレームの作成。</li>
-                        <li>ワイヤーフレームを基にした、デザインの作成</li>
+                        <li>ワイヤーフレームを基にした、デザインの作成。</li>
+                        <li>使用可能OS：Windows、mac。
+                        </li>
                         <li>使用可能ソフト：<br />Adobe XD、Figma、Photoshop、Illustrator。</li>
                     </ul>
                 </article>
