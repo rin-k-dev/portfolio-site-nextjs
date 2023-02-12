@@ -7,7 +7,7 @@ export default function Description() {
             <div className={styles.pDescription}>
                 <h2>Rin K</h2>
                 <p>
-                    千葉県在住のWebコーダーです。<br />
+                    千葉県在住のWebデザイナーです。<br />
                     ポートフォリオをご覧いただきありがとうございます。<br />
                     Web制作のお仕事承ります。<br />
                 </p>
