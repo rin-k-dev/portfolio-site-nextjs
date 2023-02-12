@@ -10,8 +10,9 @@ export default function Service() {
                     <h4>新規Webデザインの作成</h4>
                     <p>ワイヤーフレームおよびデザインの作成。</p>
                     <ul>
-                        <li>Adobe XD、Figmaなどを用いたワイヤーフレームの作成。</li>
-                        <li>PhotoshopやFigmaなどのデザインソフトを用いたデザインの作成</li>
+                        <li>ワイヤーフレームの作成。</li>
+                        <li>ワイヤーフレームを基にした、デザインの作成</li>
+                        <li>使用可能ソフト：<br />Adobe XD、Figma、Photoshop、Illustrator。</li>
                     </ul>
                 </article>
                 <article>
