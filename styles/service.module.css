@@ -19,11 +19,12 @@
 }
 
 .pSectionServiceItems {
+    max-width: 1120px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
     justify-items: center;
-    grid-gap: 30px;
-
+    grid-gap: clamp(1.875rem, -0.1056rem + 8.4507vw, 7.5rem);
 }
 
 .pSectionServiceItems article {
