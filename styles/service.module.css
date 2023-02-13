@@ -31,11 +31,15 @@
     width: 92%;
     background: var(--white);
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
+    padding-right: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
     padding-top: 1.875rem;
     padding-bottom: 3rem;
     border-radius: 20px;
+}
+
+.pSectionServiceItems article p {
+    text-align: center;
 }
 
 .pSectionServiceItems article ul {
